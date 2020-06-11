@@ -14,9 +14,7 @@
 - 머신러닝의 분류
 - 머신러닝을 위한 기초 수학
 
-> [2주차 과제](2주차과제.ipynb) : 파이썬과 인공지능 기초 수학
-
-> 위의 파일이 열리지 않을 때 -> [2주차 과제 nbviewer](https://nbviewer.jupyter.org/github/gam-bit/gj-aischool/blob/master/2%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%EA%B3%BC%EC%A0%9C.ipynb) 
+> 위의 파일이 열리지 않을 때 -> [2주차 과제 nbviewer](https://nbviewer.jupyter.org/github/gam-bit/gj-aischool/blob/master/2%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1%EA%B3%BC%EC%A0%9C.ipynb) : 파이썬과 인공지능 기초 수학
 
 ## 3주차
 - 파이썬 심화
