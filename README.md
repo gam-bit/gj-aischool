@@ -11,6 +11,7 @@
 ### Week1-2) [공통 과정](./General)
 - 파이썬
 - SQL
+- Git/GitHub
 
 ### Week3)
 
