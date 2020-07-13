@@ -14,3 +14,9 @@
 - Git/GitHub
 
 ### Week2-8) 로테이션
+1. [NLP and Recommender System](./2_NLP and Recommender System)
+2. [Machine Learning](./2_Machine Learning)
+3. [Algorithm and Cloud](./2_Algorithm and Cloud)
+4. [Web Application](./2_Web Application)
+5. [Bigdata Analysis](./2_Bigdata Analysis)
+6. [Reinforcement and Deep learning](./2_Reinforcement learning and Deep learning)
