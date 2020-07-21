@@ -1,49 +1,56 @@
-def push(x):
-    stack.append(x)
+class Stack:
 
-def pop():
-    try:
-        a = stack.pop()
-    except:
-        a = -1
-    return a
+    def __init__(self):
+        self.len = 0
+        self.stack = []
 
-def size(): 
-    n = 0
-    for i in stack:
-        n += 1
-    return n
-    
-    
-def empty():
-    if size() == 0:
+    def push(self, x):
+        self.stack.append(x)
+        self.len += 1
+
+    def pop(self):
+        try:
+            a = self.stack.pop()
+            self.len -= 1
+        except:
+            a = -1
+        return a
+
+    def size(self): 
+        return self.len
+        
+        
+    def empty(self):
+        if self.len:
+            return 0
         return 1
-    return 0
-    
-def top():
-    
-    if empty():
-        return -1
-    return stack[size()-1]
+        
+    def top(self):
+        
+        if self.empty():
+            return -1
+        return self.stack[self.len-1]
 
 
 #----------------------
+
+stack = Stack()
+
 order_N = int(float(input()))
-stack = []
 
 for i in range(order_N):
-    order = input('명령을 입력하세요: ')
-    if 'push' in order:
-        push(int(order.replace('push ', '')))
+    order = list(input().split())
+    if order[0] == 'push':
+        stack.push(int(order[1]))
     
-    elif order == 'pop':
-        print(pop())
+    elif order[0] == 'pop':
+        print(stack.pop())
     
-    elif order == 'top':
-        print(top())
+    elif order[0] == 'top':
+        print(stack.top())
         
-    elif order == 'empty':
-        print(empty())
+    elif order[0] == 'empty':
+        print(stack.empty())
     
     else: # 무조건 올바른 명령만 들어오기 때문
-        print(size())
+        print(stack.size())
