@@ -1,0 +1,2 @@
+the_best.h5 -- 11_LSTM_korean.ipynb
+the_best_korean_okt_tokenizer.h5 -- 11_LSTM_korean.ipynb
