@@ -30,10 +30,10 @@ for i in insertionSort(n, arr):
 print("="*20)
 print(">> solution") # index를 사용
 
-def insertionSort_sol(N, array):
+def insertionSort_sol(array):
     for i in range(len(array)):
         focus_idx = i
-        while focus_idx >=1 and array[focus_idx-1] > array[focus_idx]:
+        while focus_idx >=1 and array[focus_idx-1] > array[focus_idx]: 
             array[focus_idx-1], array[focus_idx] = array[focus_idx], array[focus_idx-1]
             focus_idx -= 1
     return array
@@ -45,5 +45,5 @@ for _ in range(n):
     a = int(input())
     arr.append(a)
 print("---Soltution Sort 후---")
-for i in insertionSort_sol(n, arr):
+for i in insertionSort_sol(arr):
     print(i)
