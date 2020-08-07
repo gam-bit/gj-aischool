@@ -1,26 +1,21 @@
 n = int(input())
-
-conf_list = []
+meet_list = []
 
 for _ in range(n):
-    conf_list.append(list(map(int, input().split())))
+    meet_list.append(list(map(int, input().split())))
 
-conf_list.sort(key=lambda x: x[1], x[0]) # nlogn
+# 끝나는 시간으로 오름차순 정렬, 시작 시간으로 오름차순 정렬
+meet_list.sort(key=lambda row: [row[1], row[0]]) 
 
-max_conf_cnt = 1
+result_meet_cnt = 1
+book_end_time = meet_list[0][1]
+book_meet_list = [meet_list[0]]
 
-first_conf = conf_list.pop(0) # n
-end_time = first_conf[1]
+for idx in range(1, len(meet_list)):
+    if book_end_time <= meet_list[idx][0]:
+        book_end_time = meet_list[idx][1]
+        result_meet_cnt += 1
+        book_meet_list.append(meet_list[idx])
 
-for idx in range(len(conf_list)):
-    
-    conf = conf_list[idx]
-    if end_time <= conf[0]:
-        max_conf_cnt += 1
-        end_time = conf[1]
-
-print(max_conf_cnt)
-
-
-
-        
+print(result_meet_cnt)
+print(book_meet_list)
